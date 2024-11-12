@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: lightgray;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 700px 400px 300px;
+    gap: 10px;
+    grid-template-areas:
+    "rubrik rubrik rubrik rubrik "
+    "mitten mitten mitten mitten "
+    "klipp klipp klipp partners"
+    "merch buddies fine partners"
+
+}
+img{
+    display: block;
+    object-fit: cover;
+}
+
+
+div {
+    border: dotted;
+}
+
+.rubrik{
+    grid-area:rubrik ;
+}
+/* .topright{
+    grid-area:topright ;
+}
+.topleft{
+    grid-area:topleft ;
+} */
+.mitten{
+    grid-area:mitten ;
+    background-image: url("img/happiest-dog.webp");
+}
+.klipp{
+    grid-area:klipp ;
+}
+.merch{
+    grid-area: merch;
+}
+.Buddies{
+    grid-area:buddies ;
+}
+.fine{
+    grid-area:fine ;
+}
+.partners{
+    grid-area:partners ;
+}
