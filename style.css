@@ -4,15 +4,21 @@
 
 body {
     margin: 0;
-    background-color: lightgray;
+    background-color: #eee;
+}
+
+p, h1, h2, h3, a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
     max-width: 1200px;
-    background-color: white;
+    background-color: #eee;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 700px 400px 300px;
+    grid-template-rows: 80px 600px 300px 4fr;
     gap: 10px;
     grid-template-areas:
     "rubrik rubrik rubrik rubrik "
@@ -23,39 +29,101 @@ body {
 }
 img{
     display: block;
-    object-fit: cover;
+    object-fit: fill;
+    border-radius: 10px;
 }
 
 
 div {
-    border: dotted;
+    /* border: dotted; */
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .rubrik{
     grid-area:rubrik ;
-}
-/* .topright{
-    grid-area:topright ;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .topleft{
-    grid-area:topleft ;
-} */
+    grid-area:topright ;
+    display: flex;
+    width: max-content;
+    width: 300px;
+    align-items: center;
+
+}
+nav{
+    display: flex;
+    /* border-style: dotted; */
+    align-items: center;
+    
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+nav ul a{
+    display:block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    background-color: #eee;
+}
+nav ul a:hover {
+    color: #eee;
+    background-color: black;
+}
 .mitten{
     grid-area:mitten ;
     background-image: url("img/happiest-dog.webp");
+    display: flex;
+    align-items: end;
+    justify-items: end;
+}
+.imitten{
+    display: flex;
+    height: min-content;
+    flex-direction: column;
+    color: white;
 }
 .klipp{
     grid-area:klipp ;
+    background-color: white;
+    display:flex;
 }
 .merch{
     grid-area: merch;
+    background-color: white;
 }
 .Buddies{
     grid-area:buddies ;
+    background-color: white;
 }
 .fine{
     grid-area:fine ;
+    background-color: white;
 }
 .partners{
     grid-area:partners ;
+    background-color: white;
+}
+.bilder{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 175px;
+margin-left: 42.5px;
+}
+
+.bilder{
+
+
 }
